@@ -11,7 +11,7 @@ p = ggplot( data=fig5.df, mapping=aes( effect, threshold, stimulus, eye ) )
 p +  
   geom_linerange( data=fig5.df, mapping = aes( x=effect, ymin=ci.lower, ymax=ci.upper, linetype=eye ), size=1.5) +
   geom_point(mapping=aes( shape=stimulus ), size=5 ) +
-  geom_text( aes( x=7.5, y=0.1, label="p=.041"), size=5 ) +
+  geom_text( aes( x=7.5, y=0.1, label="p=.041"), size=4 ) +
   geom_segment( data=fig5.df, aes( x=7.5, y=(threshold[7]+threshold[8])/2, xend=7.5, yend=threshold[7]), width=0.2, 
                 arrow = arrow( length=unit(0.2,"cm")), show_guide=F ) +
   geom_segment(data = fig5.df, aes( x=7.5, y=(threshold[7]+threshold[8])/2, xend=7.5, yend=threshold[8], width=0.2 ),
