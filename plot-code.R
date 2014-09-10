@@ -19,8 +19,8 @@ p +
   xlab("Stimulus x Filter x Diagnosis") +
   ylab("Threshold") +
   ggtitle("Thresholds by stimulus, filter, and diagnostic group") +
-  theme(plot.title=element_text(size=22)) +
-  theme(axis.title.x=element_text(size=16) ) +
-  theme(axis.title.y=element_text(size=16) ) +
+  theme(plot.title=element_text(size=22, face="bold")) +
+  theme(axis.title.x=element_text(size=16, face="bold") ) +
+  theme(axis.title.y=element_text(size=16, face="bold") ) +
   annotate("rect", xmin = 6.5, xmax = 8.5, ymin = -.35, ymax = .22,
            alpha = .2)
